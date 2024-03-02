@@ -3,7 +3,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
         <div>
-            <footer className="footer p-10 bg-base-200 text-base-content">
+            <footer className="footer p-10 bg-black-600 text-base-content">
                 <aside>
                     <img height={20} width={200} src="/src/assets/logo-removebg.png" alt="" />
                     <p>BYTE SYNS TECH<br />Providing reliable tech since 2023 - {currentYear}.</p>

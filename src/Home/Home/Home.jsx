@@ -1,6 +1,7 @@
 import Navbar from "../../Components/Navbar/Navbar";
 import Count from "../Count/Count";
 import Footer from "../Footer/Footer";
+import Hero from "../Hero/Hero";
 import Sponsor from "../Sponsor/Sponsor";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <div>
             {/* Navbar */}
             <Navbar></Navbar>
+            <Hero></Hero>
 
             {/* Slider */}
             <Count></Count>
