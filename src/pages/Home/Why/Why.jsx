@@ -29,7 +29,7 @@ const Why = () => {
             <div className="bg-black py-10 sm:py-20">
                 <div className="mx-auto max-w-7xl px-4 lg:px-8">
                     <div className="mx-auto lg:mx-0 text-center">
-                        <h2 className="text-4xl font-bold tracking-tight text-white sm:text-4xl">Why BYTE SYNC?</h2>
+                        <h2 className="text-4xl font-bold tracking-tight text-white sm:text-4xl">Why <span className="text-secondary">BYTE SYNC</span> ?</h2>
                         <p className="mt-2 text-sm sm:text-xl text-white">
                             In a tech-driven world, BYTE SYNC is your partner in progress, delivering transformative experiences.
                         </p>
@@ -38,7 +38,7 @@ const Why = () => {
                         {posts.map((post) => (
                             <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">
                                 <div className="group relative mx-auto">
-                                    <h3 className="mt-3 text-2xl font-bold leading-6 text-white group-hover:text-primary">
+                                    <h3 className="mt-3 text-2xl font-bold leading-6 text-white">
                                         <div className="mb-4  ">{post.title}</div>
                                     </h3>
                                     <div className="flex">

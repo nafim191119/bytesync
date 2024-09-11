@@ -1,0 +1,38 @@
+.swiper {
+  width: 100%;
+  height: 60vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-bg-1 {
+  background-image: url('https://i.ibb.co.com/6YGjCRL/Blue-Modern-Startup-Presentation-1.png');
+}
+.b{
+  font-weight: bold;
+  color: deepskyblue;
+  size: 20px;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .swiper {
+    height: 40vh;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .swiper {
+    height: 30vh;
+  }
+}
