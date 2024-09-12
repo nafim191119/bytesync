@@ -5,11 +5,11 @@ const TeamCard = ({ item }) => {
 
     return (
         <div className="mx-auto">
-            <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div className="flex flex-col items-center text-center p-6 bg-gray-300 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                 <img alt="" src={imageUrl} className="h-28 w-28 rounded-full mb-4" />
                 <div>
                     <h3 className="text-xl font-bold text-gray-900">
-                        <Link>{name}</Link>
+                        <Link className="hover:underline">{name}</Link>
                     </h3>
                     <p className="text-sm font-semibold text-indigo-600">{role}</p>
                 </div>

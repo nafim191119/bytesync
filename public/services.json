@@ -24,7 +24,7 @@
         "icon": "cybersecurity_icon.png",
         "developer": 4,
         "image":"https://i.ibb.co.com/G21wzyb/105994433.webp",
-        "additional_info": "Protect your business from evolving threats with our robust cybersecurity solutions. We offer security assessments, threat management, and compliance services to safeguard your data and systems."
+        "additional_info": "Protect your business from evolving threats with our robust cybersecurity solutions. We offer security assessments, threat management, and compliance services to guard data and systems."
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "icon": "ai_ml_icon.png",
         "developer": 6,
         "image":"https://i.ibb.co.com/Xt03dRY/AI-and-machine-learning-00afb90f3d21234fd0f207243f60aa8e.jpg",
-        "additional_info": "Harness the power of artificial intelligence and machine learning to drive innovation and optimize operations. Our solutions include predictive analytics, automation, and custom AI models tailored to your industry."
+        "additional_info": "Harness the power of artificial intelligence and machine learning to drive innovation and optimize operations. Our solutions predictive analytics, automation, and custom AI models tailored to industry."
     },
     {
         "id": 5,

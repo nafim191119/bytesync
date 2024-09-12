@@ -11,11 +11,11 @@ const Team = () => {
     }, []);
 
     return (
-        <div>
-            <div className="bg-white px-4 py-12 sm:py-16">
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold text-gray-900 sm:text-4xl uppercase tracking-tight pb-3">Our Success Team</h2>
-                    <p className="text-xl text-gray-600 text-semibold">
+        <div className="py-2">
+            <div className="bg-black px-4 py-12 sm:py-16">
+                <div className="text-center text-white mb-16">
+                    <h2 className="text-4xl font-bold sm:text-4xl uppercase tracking-tight pb-3">Our Success Team</h2>
+                    <p className="text-xl text-semibold">
                         Our team of experts combines experience and creativity. We're here to deliver solutions that exceed expectations.
                     </p>
                 </div>

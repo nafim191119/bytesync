@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Judith Black",
+        "role": "CEO of Workcation",
+        "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.",
+        "rating": 5
+    },
+    {
+        "name": "Leslie Alexander",
+        "role": "Marketing Director",
+        "imageUrl": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "review": "Eum nesciunt corporis asperiores quibusdam. Eos quas eius quod, mollitia voluptatem adipisci. Quas distinctio et vero illo placeat.",
+        "rating": 4
+    },
+    {
+        "name": "John Doe",
+        "role": "CTO of XYZ",
+        "imageUrl": "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "review": "Culpa repudiandae voluptatem rerum assumenda. Veritatis ipsa dolorum minima libero, temporibus. Quasi provident ducimus distinctio nostrum qui.",
+        "rating": 3
+    }
+]
