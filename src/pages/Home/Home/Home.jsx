@@ -10,8 +10,8 @@ const Home = () => {
         <div className="pt-2">
             <Slider></Slider>
             <Services></Services>
-            <Stat></Stat>
             <Why></Why>
+            <Stat></Stat>
             <Testimonial></Testimonial>
             <Inspired></Inspired>
         </div>

@@ -32,9 +32,9 @@ const Testimonial = () => {
             <div className="divider"></div>
             <section className="relative isolate overflow-hidden bg-black px-6 py-12 sm:py-26 lg:px-8">
                 <div className="text-center mb-12">
-                    <h2 className="text-5xl font-bold text-white mb-4">Our Client Reviews</h2>
-                    <p className="text-gray-300 leading-relaxed text-2xl">
-                        What our clients say about us.
+                    <h2 className="text-4xl font-bold text-white mb-4 uppercase">Our Client Reviews</h2>
+                    <p className="text-gray-300 leading-relaxed text-xl">
+                        Which peoples loves us a lot, please check out what about says about us
                     </p>
                 </div>
 

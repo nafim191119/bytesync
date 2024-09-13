@@ -7,14 +7,6 @@ const posts = [
         des3: 'Expertise Beyond Boundaries', 
     },
     {
-        id: 2,
-        title: 'Explore Our Services',
-        des1: 'IT Consulting',
-        des2: 'Software Development',
-        des3: 'Managed IT Services',
-        des4: 'Cybersecurity',
-    },
-    {
         id: 3,
         title: 'Unparalleled Support',
         des1: 'Customer-Centric Excellence',
@@ -29,7 +21,7 @@ const Why = () => {
             <div className="bg-black py-10 sm:py-20">
                 <div className="mx-auto max-w-7xl px-4 lg:px-8">
                     <div className="mx-auto lg:mx-0 text-center">
-                        <h2 className="text-4xl font-bold tracking-tight text-white sm:text-4xl">Why <span className="text-secondary">BYTE SYNC</span> ?</h2>
+                        <h2 className="text-5xl font-bold tracking-tight text-white sm:text-4xl uppercase">Why <span className="text-secondary">BYTE SYNC</span> ?</h2>
                         <p className="mt-2 text-sm sm:text-xl text-white">
                             In a tech-driven world, BYTE SYNC is your partner in progress, delivering transformative experiences.
                         </p>

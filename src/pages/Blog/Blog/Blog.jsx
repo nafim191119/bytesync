@@ -31,12 +31,15 @@ const blogs = [
 
 const Blog = () => {
     return (
-        <div className="pt-2">
+        <div className="pt-2 py-12">
             <div className="min-h-screen bg-black py-12">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-                    <h1 className="text-4xl font-bold text-center  mb-10">
-                        Latest Blog Posts
-                    </h1>
+                    <div className="text-center py-10">
+                        <h1 className="text-4xl font-bold mb-3 uppercase">
+                            Latest Blog Posts
+                        </h1>
+                        <p className="text-xl">Discover Our Fresh Perspectives and Stories</p>
+                    </div>
                     <div className="space-y-12">
                         {blogs.map((blog) => (
                             <div key={blog.id} className="space-y-6">
@@ -48,9 +51,9 @@ const Blog = () => {
                                 <h2 className="text-3xl font-bold  hover:text-blue-600 transition duration-200">
                                     {blog.title}
                                 </h2>
-                                <div className=" flex items-center justify-between">
-                                    <span>{blog.date}</span>
-                                    <span>By {blog.author}</span>
+                                <div className=" flex items-center justify-start gap-8">
+                                    <span className="text-gray-400">{blog.date}</span>
+                                    <span><span className="text-blue-500">By {blog.author}</span> </span>
                                 </div>
                                 <p className=" leading-relaxed">{blog.excerpt}</p>
                                 <a
@@ -61,13 +64,13 @@ const Blog = () => {
                                 </a>
                                 <div className="w-1/2 h-1 mx-auto bg-white"></div>
                             </div>
-                            
+
                         ))}
-                        
+
                     </div>
                 </div>
             </div>
-            
+
         </div>
     );
 };
