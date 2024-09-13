@@ -15,15 +15,12 @@ const TestimonialCard = ({ review }) => {
     };
 
     return (
-        <figure className="bg-gray-800 text-white px-8 py-6 rounded-lg shadow-lg">
+        <figure className="bg-gray-800 text-white px-4 py-6 rounded-lg shadow-lg">
             <img
                 alt={review.name}
                 src={review.imageUrl}
                 className="mx-auto h-24 w-24 rounded-full"
             />
-            <blockquote className="mt-4 text-center text-lg font-semibold leading-8 sm:text-xl">
-                <p>{review.review}</p>
-            </blockquote>
             <figcaption className="mt-4 text-center">
                 <div className="font-bold text-blue-400">{review.name}</div>
                 <div className="mt-4 text-center">
@@ -33,6 +30,9 @@ const TestimonialCard = ({ review }) => {
                 </div>
                 <div className="text-gray-400 text-sm">{review.role}</div>
             </figcaption>
+            <blockquote className="mt-4 text-start font-semibold">
+                <p>{review.review}</p>
+            </blockquote>
         </figure>
     );
 };

@@ -1,23 +1,23 @@
 [
     {
-        "name": "Judith Black",
-        "role": "CEO of Workcation",
-        "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.",
+        "name": "Azizul Islam Milton",
+        "role": "Manager of Programming Hero",
+        "imageUrl": "https://i.ibb.co.com/t8Dwjk4/423778350-1902398476842843-8012266496224619972-n.jpg",
+        "review": "Working with Byte Sync has transformed our business. Their web and app development team delivered a sleek, user-friendly platform that exceeded our expectations. The improved functionality and design have boosted our customer engagement, and we highly recommend their services for innovative digital solutions.",
         "rating": 5
     },
     {
-        "name": "Leslie Alexander",
-        "role": "Marketing Director",
-        "imageUrl": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        "review": "Eum nesciunt corporis asperiores quibusdam. Eos quas eius quod, mollitia voluptatem adipisci. Quas distinctio et vero illo placeat.",
-        "rating": 4
+        "name": "Sajeeda Deena",
+        "role": "Manager of Bortika fashion House",
+        "imageUrl": "https://i.ibb.co.com/q5zSkv7/Whats-App-Image-2024-09-13-at-1-36-59-PM.jpg",
+        "review": "We are extremely pleased with the website Byte Sync developed for us. The team truly understood our vision and translated it into a sleek, modern site that has helped us reach a wider audience. Their attention to detail and technical expertise made all the difference.",
+        "rating": 5
     },
     {
-        "name": "John Doe",
-        "role": "CTO of XYZ",
-        "imageUrl": "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        "review": "Culpa repudiandae voluptatem rerum assumenda. Veritatis ipsa dolorum minima libero, temporibus. Quasi provident ducimus distinctio nostrum qui.",
-        "rating": 3
+        "name": "Arfan Islam",
+        "role": "CEO of CatFoodDB",
+        "imageUrl": "https://i.ibb.co.com/sVV1BDf/349111541-149972484725903-1411830976344445230-n.jpg",
+        "review": "The web development services provided by Byte Sync exceeded our expectations. The new website is intuitive, easy to navigate, and has greatly improved our online presence. Their professionalism and creativity made the entire process seamless.",
+        "rating": 5
     }
 ]

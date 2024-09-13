@@ -2,7 +2,7 @@
 const Project = () => {
     return (
         <div>
-            hi
+           <h1 className="text-center py-20 text-white"> Project Coming Soon...</h1>
         </div>
     );
 };
