@@ -19,7 +19,7 @@ const Team = () => {
                         Our team of experts combines experience and creativity. We're here to deliver solutions that exceed expectations.
                     </p>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
                     {team.map((person) => (
                         <TeamCard key={person.name} item={person} />
                     ))}

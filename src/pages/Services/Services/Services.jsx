@@ -20,7 +20,7 @@ const Services = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 space-x-2">
                 {
-                    services.map(service => <Card key={service.id} service={service}></Card>)
+                    services.map(service => <Card key={service._id} service={service}></Card>)
                 }
             </div>
             <section className="text-center py-10 bg-blue-600 text-white rounded-lg shadow-lg px-4 md:mx-8">

@@ -12,6 +12,8 @@ import Login from "../pages/Login/Login";
 import Signup from "../pages/Signup/Signup";
 import Dashboard from "../Layout/Dashboard";
 import Client from "../pages/DashBoard/Client/Client";
+import AddTeam from "../pages/DashBoard/AddTeam/AddTeam";
+import AddService from "../pages/DashBoard/AddService/AddService";
 
 
 export const router = createBrowserRouter([
@@ -67,13 +69,17 @@ export const router = createBrowserRouter([
         element: <Dashboard></Dashboard>,
         children: [
             {
-                path: 'user',
-                element:
-            },
-            {
                 path: 'client',
                 element: <Client></Client>
-            }
+            },
+            {
+                path: 'addteam',
+                element: <AddTeam></AddTeam>
+            },
+            {
+                path: 'addservice',
+                element: <AddService></AddService>
+            },
         ]
     }
 ])
