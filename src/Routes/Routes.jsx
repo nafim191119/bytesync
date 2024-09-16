@@ -8,6 +8,8 @@ import Contact from "../pages/Contact/Contact/Contact";
 import About from "../pages/About/About/About";
 import Team from "../pages/Team/Team";
 import Project from "../pages/Project/Project/Project";
+import Login from "../pages/Login/Login";
+import Signup from "../pages/Signup/Signup";
 
 
 export const router = createBrowserRouter([
@@ -46,6 +48,14 @@ export const router = createBrowserRouter([
             {
                 path: 'team',
                 element: <Team></Team>
+            },
+            {
+                path: 'login',
+                element: <Login></Login>
+            },
+            {
+                path: 'signup',
+                element: <Signup></Signup>
             },
 
         ]

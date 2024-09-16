@@ -1,11 +1,20 @@
 
 import { Link } from "react-router-dom";
 import Clock from "../Clock";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Navbar = () => {
     const currentDate = new Date().getUTCDate();
     const currentMonth = new Date().getUTCMonth();
     const currentYear = new Date().getFullYear();
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+        .then(()=>{})
+        .catch(error => console.log(error))
+    }
     return (
         <div>
             <p className="flex h-8 items-center justify-center bg-blue-600 px-2 text-sm font-bold text-white sm:px-6 lg:px-8">
@@ -42,8 +51,34 @@ const Navbar = () => {
                         <li><Link to={"/about"}>About</Link></li>
                     </ul>
                 </div>
-                <div className="navbar-end mx-4">
-                    Login
+                <div className="navbar-end mx-1 space-x-4">
+                    {
+                        user ?
+                            <>
+                                <Link onClick={handleLogOut} className="md:p-[2px] relative">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+                                    <div className="md:px-4 py-1 bg-black rounded-[6px] relative group transition duration-200 text-white">
+                                        Logout
+                                    </div>
+                                </Link>
+                            </>
+                            :
+                            <>
+                                <Link to={'/login'} className="md:p-[2px] relative">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+                                    <div className="md:px-4 py-1 bg-black rounded-[6px] relative group transition duration-200 text-white">
+                                        Login
+                                    </div>
+                                </Link>
+                            </>
+                    }
+                    <Link to={'/signup'} className="md:p-[2px] relative ">
+                        <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+                        <div className="md:px-4 py-1 bg-black rounded-[6px] relative group transition duration-200 text-white">
+                            Signup
+                        </div>
+                    </Link>
+
                 </div>
             </div>
         </div>

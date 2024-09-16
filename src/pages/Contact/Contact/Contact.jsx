@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 
 const Contact = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -16,7 +17,13 @@ const Contact = () => {
             const result = await response.json();
 
             if (response.ok) {
-                alert(result.success);
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "Your work has been done successfully",
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
                 reset();
             } else {
                 alert(result.error);
