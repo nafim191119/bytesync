@@ -6,16 +6,19 @@ const Contact = () => {
 
     const onSubmit = async (data) => {
         try {
-            const response = await fetch('http://localhost:5000/api/contact', {
+            const timestamp = new Date().toISOString();
+            const dataWithTimestamp = { ...data, timestamp };
+    
+            const response = await fetch('http://localhost:5000/client', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(data),
+                body: JSON.stringify(dataWithTimestamp),
             });
-
+    
             const result = await response.json();
-
+    
             if (response.ok) {
                 Swal.fire({
                     position: "top-end",
@@ -23,7 +26,7 @@ const Contact = () => {
                     title: "Your work has been done successfully",
                     showConfirmButton: false,
                     timer: 1500
-                  });
+                });
                 reset();
             } else {
                 alert(result.error);
@@ -33,6 +36,7 @@ const Contact = () => {
             alert('Failed to submit the form.');
         }
     };
+    
 
     return (
         <div className="py-2">
