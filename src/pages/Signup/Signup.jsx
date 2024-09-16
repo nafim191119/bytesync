@@ -2,13 +2,14 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const { createUser } = useContext(AuthContext);
+    const navigate = useNavigate();
 
     const onSubmit = async (data) => {
-        console.log(data)
         createUser(data.email, data.password)
             .then(result => {
                 const loggedUser = result.user;
@@ -18,8 +19,9 @@ const Signup = () => {
                     title: "Sign In Successful",
                     showConfirmButton: false,
                     timer: 1500
-                  });
-                console.log(loggedUser);
+                });
+                navigate('/')
+                reset();
             })
     };
 

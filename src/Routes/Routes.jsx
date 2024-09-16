@@ -10,6 +10,8 @@ import Team from "../pages/Team/Team";
 import Project from "../pages/Project/Project/Project";
 import Login from "../pages/Login/Login";
 import Signup from "../pages/Signup/Signup";
+import Dashboard from "../Layout/Dashboard";
+import Client from "../pages/DashBoard/Client/Client";
 
 
 export const router = createBrowserRouter([
@@ -58,6 +60,20 @@ export const router = createBrowserRouter([
                 element: <Signup></Signup>
             },
 
+        ],
+    },
+    {
+        path:'/dashboard',
+        element: <Dashboard></Dashboard>,
+        children: [
+            {
+                path: 'user',
+                element:
+            },
+            {
+                path: 'client',
+                element: <Client></Client>
+            }
         ]
     }
 ])

@@ -6,32 +6,30 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 const Login = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
-    const {signIn} = useContext(AuthContext);
+    const { signIn } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
-
-
     const from = location.state?.from?.pathname || '/'
 
     const onSubmit = async (data) => {
         signIn(data.email, data.password)
-        .then(result => {
-            const user = result.user;
-            Swal.fire({
-                position: "top-end",
-                icon: "success",
-                title: "User Login successful",
-                showConfirmButton: false,
-                timer: 1500
-              });
-              navigate(from, {replace:true})
-            console.log(user);
-        })
+            .then(result => {
+                const user = result.user;
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "User Login successful",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                navigate(from, { replace: true })
+                reset();
+            })
     };
 
     return (
         <div className="py-2">
-            <div className="min-h-screen bg-black py-12">
+            <div className="min-h-screen bg-black pt-16">
                 <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h1 className="text-4xl font-bold text-center text-white mb-8 uppercase">
                         Login

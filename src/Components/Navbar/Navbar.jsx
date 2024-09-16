@@ -9,6 +9,7 @@ const Navbar = () => {
     const currentMonth = new Date().getUTCMonth();
     const currentYear = new Date().getFullYear();
     const { user, logOut } = useContext(AuthContext);
+    const isAdmin = true;
 
     const handleLogOut = () => {
         logOut()
@@ -49,6 +50,9 @@ const Navbar = () => {
                         <li><Link to={"/team"}>Team</Link></li>
                         <li><Link to={"/contact"}>Contact</Link></li>
                         <li><Link to={"/about"}>About</Link></li>
+                        {
+                            isAdmin ? <li><Link to={"/dashboard"}>Dashboard</Link></li> : null
+                        }
                     </ul>
                 </div>
                 <div className="navbar-end mx-1 space-x-4">
