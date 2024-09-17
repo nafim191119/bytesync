@@ -1,4 +1,3 @@
-import axios from "axios";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 
@@ -7,17 +6,31 @@ const AddTeam = () => {
 
     const onSubmit = async (data) => {
         try {
-            const response = await axios.post('http://localhost:5000/team', data);
-            Swal.fire({
-                position: "top-end",
-                icon: "success",
-                title: "Team Added successful",
-                showConfirmButton: false,
-                timer: 1500
+            const response = await fetch('http://localhost:5000/team', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    ...data, 
+                    email: 'nafim191119@gmail.com'
+                }),
             });
-            reset();
+    
+            if (response.ok) {
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "Service added successfully",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                reset();
+            } else {
+                throw new Error('Failed to add service');
+            }
         } catch (error) {
-            console.error("Error adding team member:", error);
+            console.error("Error adding service:", error);
         }
     };
 

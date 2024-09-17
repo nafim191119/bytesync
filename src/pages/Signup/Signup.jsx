@@ -3,10 +3,11 @@ import { useForm } from "react-hook-form";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import { GoogleAuthProvider } from "firebase/auth/web-extension";
 
 const Signup = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
-    const { createUser } = useContext(AuthContext);
+    const { createUser,socialGoogleLogin } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const onSubmit = async (data) => {
@@ -22,6 +23,16 @@ const Signup = () => {
                 });
                 navigate('/')
                 reset();
+            })
+    };
+
+    const handleGoogleSignIn = () => {
+        socialGoogleLogin()
+            .then((result) => {
+                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+                const user = result.user;
+                navigate('/');
             })
     };
 
@@ -115,6 +126,7 @@ const Signup = () => {
                         >
                             Signup
                         </button>
+                        <button onClick={handleGoogleSignIn} className="btn btn-active btn-neutral text-center">Google</button>
                     </form>
                 </div>
             </div>

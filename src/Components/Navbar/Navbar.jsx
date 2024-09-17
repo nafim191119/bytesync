@@ -4,17 +4,19 @@ import Clock from "../Clock";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 
+
+const adminEmail = 'nafim191119@gmail.com';
+
 const Navbar = () => {
     const currentDate = new Date().getUTCDate();
     const currentMonth = new Date().getUTCMonth();
     const currentYear = new Date().getFullYear();
     const { user, logOut } = useContext(AuthContext);
-    const isAdmin = true;
 
     const handleLogOut = () => {
         logOut()
-        .then(()=>{})
-        .catch(error => console.log(error))
+            .then(() => { })
+            .catch(error => console.log(error))
     }
     return (
         <div>
@@ -50,9 +52,9 @@ const Navbar = () => {
                         <li><Link to={"/team"}>Team</Link></li>
                         <li><Link to={"/contact"}>Contact</Link></li>
                         <li><Link to={"/about"}>About</Link></li>
-                        {
-                            isAdmin ? <li><Link to={"/dashboard/client"}>Dashboard</Link></li> : null
-                        }
+                        {user && user.email === adminEmail && (
+                        <li><Link to='/dashboard/client'>Dashboard</Link></li>
+                    )}
                     </ul>
                 </div>
                 <div className="navbar-end mx-1 space-x-4">
@@ -76,12 +78,12 @@ const Navbar = () => {
                                 </Link>
                             </>
                     }
-                    <Link to={'/signup'} className="md:p-[2px] relative ">
+                    {/* <Link to={'/signup'} className="md:p-[2px] relative ">
                         <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
                         <div className="md:px-4 py-1 bg-black rounded-[6px] relative group transition duration-200 text-white">
                             Signup
                         </div>
-                    </Link>
+                    </Link> */}
 
                 </div>
             </div>

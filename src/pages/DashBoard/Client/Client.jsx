@@ -24,7 +24,7 @@ const Client = () => {
                     <div key={index._id} className="card bg-white shadow-xl">
                         <div className="card-body">
                             <div className="flex justify-center items-center">
-                                <p className="card-title text-black text-2xl font-bold">{c.name}</p>
+                                <p className="card-title text-black text-4xl font-bold">{c.name}</p>
                                 <p className="text-black text-sm mt-2 text-end">Submitted on: {new Date(c.timestamp).toLocaleString()}</p>
                             </div>
                             <p className="text-black font-semibold">{c.email}</p>
