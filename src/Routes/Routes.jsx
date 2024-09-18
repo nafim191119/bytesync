@@ -14,6 +14,7 @@ import Dashboard from "../Layout/Dashboard";
 import Client from "../pages/DashBoard/Client/Client";
 import AddTeam from "../pages/DashBoard/AddTeam/AddTeam";
 import AddService from "../pages/DashBoard/AddService/AddService";
+import AddProject from "../pages/DashBoard/AddProject/AddProject";
 
 
 export const router = createBrowserRouter([
@@ -79,6 +80,10 @@ export const router = createBrowserRouter([
             {
                 path: 'addservice',
                 element: <AddService></AddService>
+            },
+            {
+                path: 'addproject',
+                element: <AddProject></AddProject>
             },
         ]
     }
