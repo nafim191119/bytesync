@@ -9,7 +9,7 @@ const Faq = () => {
             <div className="mx-4 md:mx-16 my-6 lg:my-10">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl md:text-4xl font-bold text-white">Frequently Asked Questions</h2>
-                    <p className="text-lg md:text-xl text-gray-400 mt-2">Your Questions Answered: Insights into Our Process and Services</p>
+                    <p className="text-lg md:text-xl text-gray-400 mt-2">Your Questions Answered:: Insights into Our Process and Services</p>
                 </div>
                 <div className="">
                     <Accordion className="bg-black text-white rounded-lg shadow-md">
