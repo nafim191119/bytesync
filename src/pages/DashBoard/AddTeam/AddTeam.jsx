@@ -21,16 +21,23 @@ const AddTeam = () => {
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: "Service added successfully",
+                    title: "Team member added successfully",
                     showConfirmButton: false,
                     timer: 1500
                 });
                 reset();
             } else {
-                throw new Error('Failed to add service');
+                const errorData = await response.json();
+                throw new Error(`Failed to add team member: ${errorData.error}`);
             }
         } catch (error) {
-            console.error("Error adding service:", error);
+            console.error("Error adding team member:", error.message);
+            Swal.fire({
+                position: "top-end",
+                icon: "error",
+                title: error.message,
+                showConfirmButton: true,
+            });
         }
     };
 
