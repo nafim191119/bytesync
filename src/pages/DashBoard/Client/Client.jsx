@@ -4,7 +4,7 @@ const Client = () => {
     const [client, setClient] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/client')
+        fetch('https://bytesync-server-phi.vercel.app/client')
             .then((res) => res.json())
             .then((data) => {
                 const sortedData = data.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));

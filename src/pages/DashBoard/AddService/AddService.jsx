@@ -6,7 +6,7 @@ const AddService = () => {
 
     const onSubmit = async (data) => {
         try {
-            const response = await fetch('http://localhost:5000/service', {
+            const response = await fetch('https://bytesync-server-phi.vercel.app/service', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

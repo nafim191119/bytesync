@@ -5,7 +5,7 @@ const Team = () => {
     const [team, setTeam] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/team")
+        fetch("https://bytesync-server-phi.vercel.app/team")
             .then((data) => data.json())
             .then((res) => setTeam(res));
     }, []);

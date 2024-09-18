@@ -9,7 +9,7 @@ const Contact = () => {
             const timestamp = new Date().toISOString();
             const dataWithTimestamp = { ...data, timestamp };
     
-            const response = await fetch('http://localhost:5000/client', {
+            const response = await fetch('https://bytesync-server-phi.vercel.app/client', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
