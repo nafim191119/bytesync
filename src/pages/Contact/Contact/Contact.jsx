@@ -8,7 +8,7 @@ const Contact = () => {
         try {
             const timestamp = new Date().toISOString();
             const dataWithTimestamp = { ...data, timestamp };
-    
+        
             const response = await fetch('https://bytesync-server-phi.vercel.app/client', {
                 method: 'POST',
                 headers: {
@@ -16,24 +16,28 @@ const Contact = () => {
                 },
                 body: JSON.stringify(dataWithTimestamp),
             });
-    
-            const result = await response.json();
-    
-            if (response.ok) {
-                Swal.fire({
-                    position: "top-end",
-                    icon: "success",
-                    title: "Your work has been done successfully",
-                    showConfirmButton: false,
-                    timer: 1500
-                });
-                reset();
-            } else {
-                alert(result.error);
+        
+            if (!response.ok) {
+                const error = await response.json();
+                throw new Error(error.error || 'Failed to submit the form.');
             }
+        
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Your work has been done successfully",
+                showConfirmButton: false,
+                timer: 1500
+            });
+            reset();
         } catch (error) {
             console.error('Error submitting form:', error);
-            alert('Failed to submit the form.');
+            Swal.fire({
+                position: "top-end",
+                icon: "error",
+                title: error.message || 'Failed to submit the form.',
+                showConfirmButton: true,
+            });
         }
     };
     
@@ -162,7 +166,6 @@ const Contact = () => {
                             </div>
 
                             <div>
-
                                 <iframe
                                     className="w-full h-80 rounded-lg shadow-lg"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902096761479!2d90.39267231536372!3d23.750917494604264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374b9923248349eb%3A0x32c5b2b5f4d1a56a!2sDhaka%20IT%20Park!5e0!3m2!1sen!2sbd!4v1625847775083!5m2!1sen!2sbd"

@@ -20,8 +20,8 @@ const Navbar = () => {
     }
     return (
         <div>
-            <p className="flex h-8 items-center justify-center bg-blue-600 px-2 text-sm font-bold text-white sm:px-6 lg:px-8">
-                Welcome to Byte Sync...!!!<div className="mx-12"><Clock></Clock></div>Date: {currentDate}/{currentMonth + 1}/{currentYear}
+            <p className="flex h-6 items-center justify-center bg-blue-600 px-4 sm:text-[12px] font-bold text-white">
+                Byte Sync...!!!<div className="mx-12"><Clock></Clock></div>Date: {currentDate}/{currentMonth + 1}/{currentYear}
             </p>
             <div className="navbar bg-black text-white font-bold text-xl h-20 shadow-md border-b border-gray-200 shadow-blue-600/80">
                 <div className="navbar-start">
