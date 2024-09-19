@@ -2,9 +2,9 @@ import { FaCalendarAlt, FaSmile, FaTasks, FaUsers } from 'react-icons/fa'; // Im
 
 const stats = [
     { id: 1, name: 'Years of Experience', value: '2+', icon: <FaCalendarAlt className="text-blue-500 text-4xl" /> },
-    { id: 2, name: 'Happy Clients', value: '3', icon: <FaSmile className="text-yellow-500 text-4xl" /> },
-    { id: 3, name: 'Projects Finished', value: '6+', icon: <FaTasks className="text-green-500 text-4xl" /> },
-    { id: 4, name: 'Team Members', value: '10+', icon: <FaUsers className="text-red-500 text-4xl" /> }
+    { id: 2, name: 'Happy Clients', value: '8', icon: <FaSmile className="text-yellow-500 text-4xl" /> },
+    { id: 3, name: 'Projects Finished', value: '10', icon: <FaTasks className="text-green-500 text-4xl" /> },
+    { id: 4, name: 'Team Members', value: '17+', icon: <FaUsers className="text-red-500 text-4xl" /> }
 ];
 
 const Stat = () => {

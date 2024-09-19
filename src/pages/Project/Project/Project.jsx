@@ -1,8 +1,17 @@
+import AppProject from "../AppProject/AppProject";
+import DigitalMarProject from "../DigitalMarProject/DigitalMarProject";
+import WebProject from "../WebProject/WebProject";
+import Inspired from "../../../Components/Inspired/Inspired"
 
 const Project = () => {
     return (
         <div>
-           <h1 className="text-center py-20 text-white"> Project Coming Soon...</h1>
+            <div>
+                <WebProject></WebProject>
+                <AppProject></AppProject>
+                <DigitalMarProject></DigitalMarProject>
+                <Inspired></Inspired>
+            </div>
         </div>
     );
 };

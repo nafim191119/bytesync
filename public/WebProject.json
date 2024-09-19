@@ -1,0 +1,29 @@
+{
+    "webDevelopmentProjects": [
+      {
+        "link":"",
+        "name": "E-commerce Platform",
+        "description": "A fully responsive e-commerce website with integrated payment systems, product search, and user-friendly interface.",
+        "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
+        "imageURL": "https://example.com/ecommerce.jpg",
+        "client": "FashionStore Inc."
+      },
+      {
+        "link":"",
+        "name": "Business Portfolio Website",
+        "description": "A sleek and modern portfolio website for a business consultancy firm, showcasing services and client testimonials.",
+        "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+        "imageURL": "https://example.com/portfolio.jpg",
+        "client": "ConsultingPro"
+      },
+      {
+        "link":"",
+        "name": "Restaurant Website with Online Booking",
+        "description": "A modern website for a restaurant featuring an online booking system, menu display, and customer reviews.",
+        "technologies": ["Laravel", "Vue.js", "MySQL"],
+        "imageURL": "https://example.com/restaurant.jpg",
+        "client": "GourmetBites"
+      }
+    ]
+  }
+  

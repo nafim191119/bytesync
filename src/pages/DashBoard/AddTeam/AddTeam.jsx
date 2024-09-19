@@ -6,7 +6,7 @@ const AddTeam = () => {
 
     const onSubmit = async (data) => {
         try {
-            const response = await fetch('https://bytesync-server-phi.vercel.app/team', {
+            const response = await fetch('http://localhost:5000/team', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

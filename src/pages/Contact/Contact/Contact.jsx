@@ -9,23 +9,23 @@ const Contact = () => {
             const timestamp = new Date().toISOString();
             const dataWithTimestamp = { ...data, timestamp };
         
-            const response = await fetch('https://bytesync-server-phi.vercel.app/client', {
+            const response = await fetch('http://localhost:5000/client', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(dataWithTimestamp),
             });
-        
+
             if (!response.ok) {
-                const error = await response.json();
-                throw new Error(error.error || 'Failed to submit the form.');
+                const errorData = await response.json();
+                throw new Error(errorData.error || 'Failed to submit the form.');
             }
-        
+
             Swal.fire({
                 position: "top-end",
                 icon: "success",
-                title: "Your work has been done successfully",
+                title: "Your message has been sent successfully",
                 showConfirmButton: false,
                 timer: 1500
             });

@@ -7,7 +7,7 @@ const Services = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch("https://bytesync-server-phi.vercel.app/services")
+        fetch("http://localhost:5000/services")
             .then(data => data.json())
             .then(res => setServices(res))
     }, [])
