@@ -7,10 +7,9 @@ const WebProject = () => {
 
     // Fetch the JSON data
     useEffect(() => {
-        fetch('../../../../public/WebProject.json') // The JSON file path in the public directory
+        fetch('../../../../public/WebProject.json')
             .then(response => response.json())
             .then(data => setWebProjects(data.webDevelopmentProjects))
-            .catch(error => console.error('Error fetching project data:', error));
     }, []);
     return (
         <div className="mx-8">
@@ -30,7 +29,7 @@ const WebProject = () => {
                                 />
                             </div>
                             <div className="p-6">
-                                <h2 className="font-bold text-2xl mb-3 text-white"><Link to={project.link} className="hover:text-blue-400 hover:underline">{project.name}</Link></h2>
+                                <h2 className="font-bold text-2xl mb-3 text-white"><Link to={project.link} className="hover:text-blue-400 hover:underline" target="_blank">{project.name}</Link></h2>
                                 <p className="text-gray-300 mb-4">{project.description}</p>
                                 <p className="text-sm text-gray-400">
                                     <strong>Technologies:</strong> {project.technologies.join(', ')}

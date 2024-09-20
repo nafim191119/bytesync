@@ -1,5 +1,5 @@
 import AppProject from "../AppProject/AppProject";
-import DigitalMarProject from "../DigitalMarProject/DigitalMarProject";
+// import DigitalMarProject from "../DigitalMarProject/DigitalMarProject";
 import WebProject from "../WebProject/WebProject";
 import Inspired from "../../../Components/Inspired/Inspired"
 
@@ -9,7 +9,7 @@ const Project = () => {
             <div>
                 <WebProject></WebProject>
                 <AppProject></AppProject>
-                <DigitalMarProject></DigitalMarProject>
+                {/* <DigitalMarProject></DigitalMarProject> */}
                 <Inspired></Inspired>
             </div>
         </div>
