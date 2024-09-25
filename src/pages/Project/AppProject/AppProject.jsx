@@ -7,8 +7,7 @@ const AppProject = () => {
     useEffect(() => {
         fetch('https://bytesync-server-9t3y.onrender.com/appProjects')
             .then(response => response.json())
-            .then(data => setAppProjects(data.appDevelopmentProjects))
-            .catch(error => console.error('Error fetching project data:', error));
+            .then(data => setAppProjects(data))
     }, []);
     return (
         <div className="mx-8">

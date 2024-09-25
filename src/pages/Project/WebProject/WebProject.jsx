@@ -9,7 +9,7 @@ const WebProject = () => {
     useEffect(() => {
         fetch('https://bytesync-server-9t3y.onrender.com/webProjects')
             .then(response => response.json())
-            .then(data => setWebProjects(data.webDevelopmentProjects))
+            .then(data => setWebProjects(data))
     }, []);
     return (
         <div className="mx-8">
