@@ -1,37 +1,54 @@
-{
-    "webDevelopmentProjects": [
-      {
-        "link":"https://stylespot-4e572.web.app",
-        "name": "E-commerce Platform",
-        "description": "A fully responsive e-commerce website with integrated payment systems, product search, and user-friendly interface.",
-        "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
-        "imageURL": "https://i.ibb.co.com/wgYVKD3/Screenshot-2024-09-20-145851.png",
-        "client": "FashionStore Inc."
-      },
-      {
-        "link":"https://dramatixlab.web.app",
-        "name": "DramatixLab Website",
-        "description": "A professional drama consulting website offering tailored services for script analysis, production guidance, and theatrical coaching, designed to inspire and support creative professionals.",
-        "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
-        "imageURL": "https://i.ibb.co.com/gTtnn6q/Screenshot-2024-09-20-145430.png",
-        "client": "ConsultingPro"
-      },
-      {
-        "link":"https://bistro-boss-6004a.web.app/",
-        "name": "Restaurant Website",
-        "description": "A modern website for a restaurant featuring an online booking system, menu display, and customer reviews.",
-        "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
-        "imageURL": "https://i.ibb.co.com/Wpr7tXG/Screenshot-2024-09-20-151850.png",
-        "client": "Programming Hero"
-      },
-      {
-        "link":"https://eece-21-official-web-7r7w.vercel.app/",
-        "name": "Department Website",
-        "description": "A departmental website with some students info.",
-        "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
-        "imageURL": "https://i.ibb.co.com/kD1xQY2/Screenshot-2024-09-20-152355.png",
-        "client": "MIST EECE Family"
-      }
-    ]
+[
+  {
+    "link": "https://stylespot-4e572.web.app",
+    "name": "E-commerce Platform",
+    "description": "A fully responsive e-commerce website with integrated payment systems, product search, and user-friendly interface.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Stripe API"
+    ],
+    "imageURL": "https://i.ibb.co.com/wgYVKD3/Screenshot-2024-09-20-145851.png",
+    "client": "FashionStore Inc."
+  },
+  {
+    "link": "https://dramatixlab.web.app",
+    "name": "DramatixLab Website",
+    "description": "A professional drama consulting website offering tailored services for script analysis, production guidance, and theatrical coaching, designed to inspire and support creative professionals.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Stripe API"
+    ],
+    "imageURL": "https://i.ibb.co.com/gTtnn6q/Screenshot-2024-09-20-145430.png",
+    "client": "ConsultingPro"
+  },
+  {
+    "link": "https://bistro-boss-6004a.web.app/",
+    "name": "Restaurant Website",
+    "description": "A modern website for a restaurant featuring an online booking system, menu display, and customer reviews.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Stripe API"
+    ],
+    "imageURL": "https://i.ibb.co.com/Wpr7tXG/Screenshot-2024-09-20-151850.png",
+    "client": "Programming Hero"
+  },
+  {
+    "link": "https://eece-21-official-web-7r7w.vercel.app/",
+    "name": "Department Website",
+    "description": "A departmental website with some students info.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Stripe API"
+    ],
+    "imageURL": "https://i.ibb.co.com/kD1xQY2/Screenshot-2024-09-20-152355.png",
+    "client": "MIST EECE Family"
   }
-  
+]

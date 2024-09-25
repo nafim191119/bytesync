@@ -7,7 +7,7 @@ const WebProject = () => {
 
     // Fetch the JSON data
     useEffect(() => {
-        fetch('../../../../public/WebProject.json')
+        fetch('https://bytesync-server-9t3y.onrender.com/webProjects')
             .then(response => response.json())
             .then(data => setWebProjects(data.webDevelopmentProjects))
     }, []);

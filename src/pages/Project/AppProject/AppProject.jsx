@@ -5,7 +5,7 @@ const AppProject = () => {
 
     // Fetch the JSON data
     useEffect(() => {
-        fetch('../../../../public/AppProject.json') // The JSON file path in the public directory
+        fetch('https://bytesync-server-9t3y.onrender.com/appProjects')
             .then(response => response.json())
             .then(data => setAppProjects(data.appDevelopmentProjects))
             .catch(error => console.error('Error fetching project data:', error));
