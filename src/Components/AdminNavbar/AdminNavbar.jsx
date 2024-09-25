@@ -16,22 +16,22 @@ const AdminNavbar = () => {
                         </Link>
                     </li>
                     <li className="bg-blue-600 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:bg-black hover:shadow-xl hover:scale-105">
-                        <Link to={'/dashboard/client'} className="block px-6 py-3 text-white font-semibold">
+                        <Link to={'/dashboard-byte-sync/client'} className="block px-6 py-3 text-white font-semibold">
                             Clients
                         </Link>
                     </li>
                     <li className="bg-blue-600 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:bg-black hover:shadow-xl hover:scale-105">
-                        <Link to={'/dashboard/addteam'} className="block px-6 py-3 text-white font-semibold">
+                        <Link to={'/dashboard-byte-sync/addteam'} className="block px-6 py-3 text-white font-semibold">
                             Add Team
                         </Link>
                     </li>
                     <li className="bg-blue-600 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:bg-black hover:shadow-xl hover:scale-105">
-                        <Link to={'/dashboard/addservice'} className="block px-6 py-3 text-white font-semibold">
+                        <Link to={'/dashboard-byte-sync/addservice'} className="block px-6 py-3 text-white font-semibold">
                             Add Service
                         </Link>
                     </li>
                     <li className="bg-blue-600 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:bg-black hover:shadow-xl hover:scale-105">
-                        <Link to={'/dashboard/addproject'} className="block px-6 py-3 text-white font-semibold">
+                        <Link to={'/dashboard-byte-sync/addproject'} className="block px-6 py-3 text-white font-semibold">
                             Add Project
                         </Link>
                     </li>

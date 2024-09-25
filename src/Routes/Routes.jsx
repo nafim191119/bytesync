@@ -66,7 +66,7 @@ export const router = createBrowserRouter([
         ],
     },
     {
-        path:'/dashboard',
+        path:'/dashboard-byte-sync',
         element: <Dashboard></Dashboard>,
         children: [
             {

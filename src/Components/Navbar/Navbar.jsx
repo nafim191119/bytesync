@@ -53,7 +53,7 @@ const Navbar = () => {
                         <li><Link to={"/contact"}>Contact</Link></li>
                         <li><Link to={"/about"}>About</Link></li>
                         {user && user.email === adminEmail && (
-                        <li><Link to='/dashboard/client'>Dashboard</Link></li>
+                        <li><Link to='/dashboard-byte-sync/client'>Dashboard</Link></li>
                     )}
                     </ul>
                 </div>
