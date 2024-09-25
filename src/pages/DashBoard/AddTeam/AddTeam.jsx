@@ -6,7 +6,7 @@ const AddTeam = () => {
 
     const onSubmit = async (data) => {
         try {
-            const response = await fetch('http://localhost:5000/team', {
+            const response = await fetch('https://bytesync-server-9t3y.onrender.com/team', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

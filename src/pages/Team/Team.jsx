@@ -5,7 +5,7 @@ const Team = () => {
     const [team, setTeam] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/team")
+        fetch("https://bytesync-server-9t3y.onrender.com/team")
             .then((data) => data.json())
             .then((res) => setTeam(res));
     }, []);

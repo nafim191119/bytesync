@@ -6,7 +6,7 @@ const Testimonial = () => {
 
     useEffect(() => {
         // Fetch data from the JSON file
-        fetch("http://localhost:5000/reviews")
+        fetch("https://bytesync-server-9t3y.onrender.com/reviews")
             .then((response) => response.json())
             .then((data) => setReviews(data))
             .catch((error) => console.error("Error fetching reviews:", error));
